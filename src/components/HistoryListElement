@@ -1,0 +1,9 @@
+function HistoryListElement(props){
+
+return <li>{props.isSelected ? <strong>props.roll</strong> : props.roll}
+<button onClick={() => props.onSelect(props.id)}>Select</button>
+</li>
+}
+
+export default HistoryListElement
+
